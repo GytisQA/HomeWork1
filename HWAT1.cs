@@ -51,6 +51,7 @@ namespace PaskaitosKartojimas1
             button.Click();
             IWebElement result = chrome.FindElement(By.CssSelector("#displayvalue"));
             Assert.AreEqual(myText1, myText2, result.Text, "Number is wrong");
+            //visada butinas
             chrome.Quit();
         }
     }
